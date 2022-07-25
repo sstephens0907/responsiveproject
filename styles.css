@@ -1,0 +1,256 @@
+/* universal styles */
+
+html {
+    font-size:16px;
+}
+
+a {
+    text-decoration: none;
+    color: #63666A;
+    cursor: pointer;
+}
+a:hover {
+    color: #006ba1;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #a1c3d4;
+    text-decoration: none;
+}
+
+p {
+    font-family: poppins, sans-serif;
+    margin: 1.5rem;
+}
+
+/*title section*/
+
+.header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 3.125rem;
+    border-bottom: .125rem solid #63666A;
+
+}
+
+.header-container::before {
+    content: "";
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1591025810539-a321000cda85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+    position: absolute;
+}
+
+#header-title {
+    position: relative;
+    font-family: bitter, serif;
+    font-size: 45px;
+    color: #63666A;
+}
+
+#header-subtitle {
+    position: relative;
+    font-family: Parisienne, display;
+    font-size: 3rem;
+    color: #006ba1;
+}
+
+/*nav section*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    /*margin-left: auto;
+    margin-right: 1.25rem;*/
+}
+.nav-container {
+    position: relative;
+    display: flex;
+    background-color:#006ba1;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    opacity: 1;
+    margin: 0px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.nav li {
+    display: inline-flex;
+    font-family: poppins, sans-serif;
+    justify-content: space-evenly;
+    padding: .625rem;
+    text-align: right;
+    color: white;
+    opacity: 1; 
+    text-align: center;
+}
+
+li a {
+    color: white;
+}
+
+li a:hover {
+    color: #cfcfcf;
+    text-decoration: underline;
+}
+
+li a:visited {
+    color: #a1c3d4;
+    text-decoration: none;
+}
+
+/*about section*/
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    font-family: poppins, sans-serif;
+    margin: 1.5rem 1.5rem;
+    border-bottom: .125rem solid #63666A;
+}
+
+#hello {
+    font-family: Parisienne, display;
+    color: #728a96;
+}
+
+/*info*/
+.information-container {
+    margin: .5rem 4.5rem 1.5rem 4.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-bottom: .125rem solid #63666A;
+}
+
+.panel {
+    justify-items: center;
+    justify-content: center;
+    margin: 1rem 1.5rem;
+}
+ .panel h3 {
+    font-family: bitter, serif;
+    text-align: center;
+ }
+.panel img {
+    height: 300px;
+    width: 250px;
+    margin: 1rem 1.5rem;
+}    
+
+/*updates*/
+.updates-container {
+    margin: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    border-bottom: .125rem solid #63666A;
+}
+
+.updates h2 {
+    font-family: bitter, serif;
+    color: #728a96;
+    text-align: center;
+    
+}
+
+/*footer*/
+
+.footer-container {
+    height: 2%;
+    display: flex;
+}
+.contact-box {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color:#006ba1;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    font-family: poppins, sans-serif;
+}
+
+.contact-box p {
+    display: inline-flex;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    padding: .625rem 1.25rem;
+}
+
+@media only screen and (max-width: 1048px) {
+
+    .panel img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+  
+    .header {
+      margin-top: 2rem;
+    }
+  
+    .header-container {
+      max-height: 200px;
+    }
+  
+    .panel img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+  
+    .updates h2 {
+      font-size: 2rem;
+    }
+  
+    .panel img {
+      width: 100%;
+    }
+  }
+
+
+  .bio img {
+    float: left;
+    margin: .5rem;
+  }
+  .bio h2 {
+    font-family: bitter, serif;
+    font-size: 1.5rem;
+    color: #63666A;
+  }
+
+  .bio p{
+    text-align: justify;
+  }
+  
